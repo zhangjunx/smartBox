@@ -1,0 +1,12 @@
+.peopleImg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 102px;
+	height: 102px;
+	opacity: 0;
+}
+.imgText{
+	text-align: center;
+	line-height: 30px;
+}

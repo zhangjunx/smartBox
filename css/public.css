@@ -1,0 +1,56 @@
+/* icon图标大小 */
+.icon-width{
+	width:14px;
+	height: 14px;
+}
+.main-tab{
+	height: 42px;
+	background-color: #f5f5f5;
+	margin-left: -15px;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.main-tab .label{
+	margin-right: 5px;
+}
+
+.main-tab .label a{
+	display: block;
+	padding: 0 20px;
+	height: 42px;
+	line-height: 42px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #343434;
+	background-color: #DFDFDF;
+}
+.main-tab .label.curr a{
+	border-top: 3px solid #049CDE;
+	color: #049CDE;
+	background-color: #fff;
+}
+.main-tab .btn-box{
+	margin-top: 6px;
+}
+.main-tab .btn-box .subbtn{
+	margin-left: 10px;
+}
+.main-tab .btn-box .subbtn:hover{
+	opacity:0.6;
+	transition: all ease 0.5s;
+}
+.main-tab .btn-box a{
+	display: block;
+	padding: 0 16px;
+	line-height: 28px;
+	color: #fff;
+	border-radius: 3px;
+}
+.layui-con{
+	padding:15px 0;
+	box-sizing: border-box;
+}

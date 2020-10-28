@@ -1,0 +1,28 @@
+.titleInfo{
+	font-size: 16px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 20px;
+}
+.peopleImg{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 102px;
+	height: 102px;
+	opacity: 0;
+}
+.imgText{
+	text-align: center;
+	line-height: 30px;
+}
+.circle{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	font-size: 16px;
+	line-height: 70px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+}

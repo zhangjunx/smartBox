@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+  <meta charset="utf-8">
+  <title>人员权限</title>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <link rel="stylesheet" href="../layui/css/layui.css" media="all">
+  <link rel="stylesheet" href="../css/public.css">
+  <link rel="stylesheet" href="css/systemManage.css">
+</head>
+<body style="height: 100%;">
+  <div class="layui-fluid" style="height: 100%;">
+	  <div class="main-tab">
+	  		  <div class="label fl curr">
+	  			  <a href="javascript:;">人员权限</a>
+	  		  </div>
+	  </div>
+    <div class="layui-con" style="height: calc(100% - 50px);">
+		<div class="layui-row permissionSet" style="height: 100%;">
+			<div class="layui-col-md3 module">
+				<h2>权限组</h2>
+				<ul class="module-list">
+					<li>权限组一</li>
+					<li>权限组二</li>
+					<li>权限组三</li>
+				</ul>
+			</div>
+			<div class="layui-col-md9 power">
+				<h2>选择人员<span class="checkbox">全选</span></h2>
+				<div class="selectPerson">
+					<div class="layui-form layuiadmin-card-header-auto">
+					  <div class="layui-form-item">
+							  <div class="layui-inline">
+							    <label class="layui-form-label">楼栋名称</label>
+							    <div class="layui-input-block">
+									<select>
+										<option value="">请选择</option>
+									</select>
+							    </div>
+							  </div>
+							  <div class="layui-inline">
+							    <label class="layui-form-label">姓名</label>
+							    <div class="layui-input-block">
+									<input type="text" autocomplete="off" class="layui-input">
+							    </div>
+							  </div>
+							<div class="layui-inline">
+							  <button class="layui-btn layuiadmin-btn-useradmin layui-bg-blue" lay-submit lay-filter="LAY-user-front-search">
+								<i class="layui-icon layui-icon-search layuiadmin-button-btn"></i>
+							  </button>
+							</div>
+					  </div>
+					</div>
+					<ul class="personBox">
+						<li>张俊熙</li>
+						<li>张俊熙</li>
+						<li>张俊熙</li>
+						<li>张俊熙</li>
+						<li>张俊熙</li>
+						<li>张俊熙</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+    </div>
+  </div>
+   <script src="../js/path.js"></script>
+   <script src="../js/jquery.min.js"></script>  
+   <script src="../layui/layui.js"></script>
+   <script src="js/permissionSet-Group.js"></script>
+</body>
+</html>
