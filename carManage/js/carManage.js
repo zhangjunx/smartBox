@@ -61,3 +61,7 @@ layui.use(["form","table"],function(){
 		 area:["90%","91%"],
 	 })
 });
+//点击打印
+$("#print").click(function(){
+	print("LAY-user-manage");
+})

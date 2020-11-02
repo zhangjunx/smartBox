@@ -1,3 +1,4 @@
+var exportData;
 layui.use(["form","table","laydate"],function(){
 	 var $ = layui.$,
 	  form = layui.form,
@@ -27,6 +28,7 @@ layui.use(["form","table","laydate"],function(){
 		    elem: '#LAY-user-manage',
 		    url:url+'/parentUser/getList',
 		    cellMinWidth: 80,
+			title:"访客登记记录",
 		    request:{
 		    	pageName:"curpage",
 		    	limitName:"pagesize",
@@ -54,7 +56,17 @@ layui.use(["form","table","laydate"],function(){
 					  var $a1="<a class='layui-btn layui-btn-xs layui-btn-warm' lay-event='watch'>查看</a>";
 					  return $a1;
 				  }},
-			    ]]
-		    ,page: true
+			    ]],
+			page: true,
+			done: function (res, curr, count) {
+				exportData=res.data;
+			}
 		  });
+		  $("#export").click(function(){
+			table.exportFile("LAY-user-manage",exportData, "xls");
+		  })
+})
+//点击打印
+$("#print").click(function(){
+	print("LAY-user-manage");
 })

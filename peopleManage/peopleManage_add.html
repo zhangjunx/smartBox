@@ -15,9 +15,9 @@
 	<div class="layui-fluid">
 		<div class="layui-con">
 			<div style="padding-bottom: 20px;padding-left:24px">
-				<button class="layui-btn layui-btn-normal">人证比对</button>
-				<button class="layui-btn layui-btn-normal">人脸采集</button>
-				<button class="layui-btn layui-btn-warm">读取身份证</button>
+				<button class="layui-btn layui-btn-normal" id="personPapers">人证比对</button>
+				<button class="layui-btn layui-btn-normal" id="Unlicensed_taking">人脸采集</button>
+				<button class="layui-btn layui-btn-warm" id="readIDCard">读取身份证</button>
 			</div>
 			<div class="layui-form layuiadmin-card-header-auto">
 				<div class="layui-col-md1">
@@ -53,7 +53,7 @@
 							<label class="layui-form-label">姓名</label>
 							<div class="layui-input-block">
 								<input type="text" name="userCode"
-									autocomplete="off" lay-verify="required" class="layui-input" placeholder="请输入姓名">
+									autocomplete="off" lay-verify="required" id="IDName" class="layui-input" placeholder="请输入姓名">
 							</div>
 						</div>
 						<div class="layui-col-lg4">
@@ -93,14 +93,14 @@
 							<label class="layui-form-label">证件号</label>
 							<div class="layui-input-block">
 								<input type="text" name="userCode"
-									autocomplete="off" lay-verify="required" class="layui-input" placeholder="请输入证件号">
+									autocomplete="off" lay-verify="required" id="IDCard" class="layui-input" placeholder="请输入证件号">
 							</div>
 						</div>
 						<div class="layui-col-lg4">
 							<label class="layui-form-label">民族</label>
 							<div class="layui-input-block">
 								<input type="text" name="userCode" 
-									autocomplete="off" lay-verify="required" class="layui-input" placeholder="请输入民族">
+									autocomplete="off" lay-verify="required" id="nation" class="layui-input" placeholder="请输入民族">
 							</div>
 						</div>
 						<div class="layui-col-lg4">
@@ -116,7 +116,7 @@
 							<label class="layui-form-label">家庭住址</label>
 							<div class="layui-input-block">
 								<input type="text" name="userCode"  
-									autocomplete="off" lay-verify="required" class="layui-input" placeholder="请输入家庭住址">
+									autocomplete="off" lay-verify="required" id="address" class="layui-input" placeholder="请输入家庭住址">
 							</div>
 						</div>
 						<div class="layui-col-lg4">
@@ -177,6 +177,17 @@
 			</div>
 		</div>
 	</div>
+	<div class="personFace2" id="personFace" style="display: none;">
+		<div class="face_box">
+			<img src="../img/person2.png" alt="">
+			<video id="video" autoplay></video>
+			<canvas id="canvas" width="533" height="432"></canvas>
+		</div>
+	 </div> 
+	 <div style='margin-top:25px;display:none' id="teminal">
+	 	<label class='layui-inline' style='width:67px;text-align:center;font-size:14px;margin-left:5px'>设备SN:</label>
+	 	<select type='text' id='deviceSn' style='width: 211px;height: 30px;line-height: 30px;border: 1px solid #ddd;color: #333;background: #fff;'></select>
+	 </div>
 	<script src="../js/path.js"></script>  
 	<script src="../js/jquery.min.js"></script>  
     <script src="../layui/layui.js"></script>

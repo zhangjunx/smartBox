@@ -36,7 +36,7 @@ layui.use(["form","table"],function(){
 			      {field:'CREATEDATE', title:'房主姓名', width:200,sort:true},
 				  {field:'CREATEDATE', title:'联系方式', width:200,sort:true},
 				  {field:'CREATEDATE', title:'房主身份证号', width:200,sort:true},
-			      {field:'REMARK', title:'操作', width:350,templet:function(){
+			      { title:'操作', width:350,templet:function(){
 					  var $a1="<a class='layui-btn layui-btn-xs layui-bg-gray'></i>查看</a>";
 					  var $a2="<a class='layui-btn layui-btn-normal layui-btn-xs layui-bg-gray'>编辑</a>";
 					  var $a3="<a class='layui-btn layui-btn-danger layui-btn-xs layui-bg-gray'>删除</a>";
@@ -56,3 +56,7 @@ layui.use(["form","table"],function(){
 		 area:["90%","91%"],
 	 })
 });
+//点击打印
+$("#print").click(function(){
+	print("LAY-user-manage");
+})
