@@ -128,6 +128,12 @@
 	background: #22A1D9;
 	font-size: 18px;
 }
+.monitorBox .monitorBox-item .monitorBox-item-left .status.out{
+	background: #D9B022;
+}
+.monitorBox .monitorBox-item .monitorBox-item-left .status.strange{
+	background: #D92222;
+}
 .monitorBox .monitorBox-item .monitorBox-item-right{
 	display: inline-block;
 	margin-left: 10px;

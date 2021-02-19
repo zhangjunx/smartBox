@@ -61,7 +61,7 @@ layui.use(["form","table","laydate"],function(){
 				}
 		  });
 		  $("#export").click(function(){
-		  			table.exportFile("LAY-user-manage",exportData, "xls");
+				table.exportFile("LAY-user-manage",exportData, "xls");
 		  })
 })
 //点击打印

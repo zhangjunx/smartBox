@@ -220,6 +220,7 @@ table td .checkbox.curr{
 	cursor: pointer;
 	font-size: 14px;
 	margin-top: 4px;
+	margin-right: 10px;
 }
 .timeGroup h2 span.curr{
 	float: right;

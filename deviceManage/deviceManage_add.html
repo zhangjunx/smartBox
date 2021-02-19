@@ -41,8 +41,9 @@
 						<div class="layui-col-lg4">
 							<label class="layui-form-label">通道名称</label>
 							<div class="layui-input-block">
-								<input type="text" name="userCode"
-									autocomplete="off" lay-verify="required" class="layui-input" placeholder="请输入通道名称">
+								<select lay-verify="required">
+									<option value="">请选择</option>
+								</select>
 							</div>
 						</div>
 					</div>
@@ -57,8 +58,8 @@
 						<div class="layui-col-lg4">
 							<label class="layui-form-label">进出状态</label>
 							<div class="layui-input-block">
-								<input type="text" name="userCode"
-									autocomplete="off" lay-verify="required" class="layui-input" placeholder="">
+								<input type="radio" class="layui-input" value="" name="inout" title="进入" checked>
+								<input type="radio" class="layui-input" value="" name="inout" title="外出">
 							</div>
 						</div>
 					</div>
@@ -121,8 +122,8 @@
 						<div class="layui-col-lg4">
 							<label class="layui-form-label">网络状态</label>
 							<div class="layui-input-block">
-								<input type="text" name="userCode"
-									autocomplete="off" lay-verify="required" class="layui-input" placeholder="请输入网络状态">
+								<input type="radio" class="layui-input" value="" name="normal" title="正常" checked>
+								<input type="radio" class="layui-input" value="" name="normal" title="异常">
 							</div>
 						</div>
 					</div>
@@ -130,8 +131,8 @@
 						<div class="layui-col-lg4">
 							<label class="layui-form-label">在线状态</label>
 							<div class="layui-input-block">
-								<input type="text" name="userCode"
-									autocomplete="off" lay-verify="required" class="layui-input" placeholder="请输入在线状态">
+								<input type="radio" class="layui-input" value="" name="online" title="在线" checked>
+								<input type="radio" class="layui-input" value="" name="online" title="离线">
 							</div>
 						</div>
 						<div class="layui-col-lg4">
